@@ -1,7 +1,7 @@
 import requests
 
 url = "https://devapi.qweather.com/v7/weather/now"
-params = {"location": "101280601", "key": "d728d7e682074509a4c8b030f3729e99"}#和风天下以location位置ID传入城市
+params = {"location": "101280601", "key": "your key"}#和风天下以location位置ID传入城市
 response = requests.get(url, params=params)  # 发送GET请求
 
 if response.status_code == 200:
